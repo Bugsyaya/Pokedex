@@ -2,8 +2,8 @@
     "name": "Mon Super Pokedex !",
     "short_name": "Pokedex",
     "icons": [{
-          "src": "128.png",
-          "sizes": "512x512",
+          "src": "/144.png",
+          "sizes": "144x144",
           "type": "image/png"
         }],
     "start_url": "/",
