@@ -4,8 +4,8 @@ self.addEventListener('install', e => {
         .then(cache => {
             return cache.addAll([
                 '/',
-                './serviceWorker.js',
-                './index.html'
+                '/serviceWorker.js',
+                '/index.html'
             ])
             .then(() => self.skipWaiting())
         })
