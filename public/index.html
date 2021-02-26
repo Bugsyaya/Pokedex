@@ -11,17 +11,12 @@
     <title><%= htmlWebpackPlugin.options.title %></title>
   </head>
   <body>
-  <script>
-    if('serviceWorker' in navigator) {
-          navigator.serviceWorker.register('/serviceWorker.js', { scope: '/' })
-            .then(function(registration) {
-                  console.log('Service Worker Registered');
-            });
-
-          navigator.serviceWorker.ready.then(function(registration) {
-            console.log('Service Worker Ready');
-          });
-        }
+    <script>
+       if('serviceWorker' in navigator) {
+          navigator.serviceWorker
+            .register('/serviceWorker.js')
+            .then(function() { console.log("Service Worker Registered"); })
+       }
     </script>
     <div id="app">
     </div>
